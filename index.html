@@ -15,70 +15,73 @@
 </head>
 
 <body>
-  <img class="logo" src="./images/logo.svg" alt="Splitter" />
+  <main>
+    <img class="logo" src="./images/logo.svg" alt="Splitter" />
 
-  <div class="container">
-    <div class="inputs">
+    <div class="container">
+      <div class="inputs">
 
-      <label for="bill">Bill</label>
-      <div class="input-container bill">
-        <span class="error">Can't be zero</span>
-        <img src="./images/icon-dollar.svg" alt="$" />
-        <input class="input-number" type="number" min="0" id="bill" placeholder="0" />
-      </div>
+        <label for="bill">Bill</label>
+        <div class="input-container bill">
+          <span class="error">Can't be zero</span>
+          <img src="./images/icon-dollar.svg" alt="$" />
+          <input class="input-number" type="number" min="0" id="bill" placeholder="0" />
+        </div>
 
-      <div role="group" aria-labelledby="select-tip">
-        <div id="select-tip">Select Tip %</div>
-        <div class="tip-amounts">
-          <input type="radio" name="tip" id="btn-1" value="5" />
-          <label for="btn-1">5%</label>
-          <input type="radio" name="tip" id="btn-2" value="10" />
-          <label for="btn-2">10%</label>
-          <input type="radio" name="tip" id="btn-3" value="15" />
-          <label for="btn-3">15%</label>
-          <input type="radio" name="tip" id="btn-4" value="25" />
-          <label for="btn-4">25%</label>
-          <input type="radio" name="tip" id="btn-5" value="50" />
-          <label for="btn-5">50%</label>
-          <input aria-label="Custom" class="custom" type="number" min="0" name="tip" id="custom" placeholder="Custom" />
+        <div role="group" aria-labelledby="select-tip">
+          <div id="select-tip">Select Tip %</div>
+          <div class="tip-amounts">
+            <input type="radio" name="tip" id="btn-1" value="5" />
+            <label for="btn-1">5%</label>
+            <input type="radio" name="tip" id="btn-2" value="10" />
+            <label for="btn-2">10%</label>
+            <input type="radio" name="tip" id="btn-3" value="15" />
+            <label for="btn-3">15%</label>
+            <input type="radio" name="tip" id="btn-4" value="25" />
+            <label for="btn-4">25%</label>
+            <input type="radio" name="tip" id="btn-5" value="50" />
+            <label for="btn-5">50%</label>
+            <input aria-label="Custom" class="custom" type="number" min="0" name="tip" id="custom"
+              placeholder="Custom" />
+          </div>
+        </div>
+
+        <label for="people">Number of People</label>
+        <div class="input-container people">
+          <span class="error">Can't be zero</span>
+          <img src="./images/icon-person.svg" alt="Person icon" />
+          <input class="input-number" type="number" min="0" id="people" placeholder="0" />
         </div>
       </div>
 
-      <label for="people">Number of People</label>
-      <div class="input-container people">
-        <span class="error">Can't be zero</span>
-        <img src="./images/icon-person.svg" alt="Person icon" />
-        <input class="input-number" type="number" min="0" id="people" placeholder="0" />
+      <div class="result">
+        <div class="flex">
+          <div>
+            <h2>Tip Amount</h2>
+            <p>/ person</p>
+          </div>
+          <h1 class="tip-pp">$0.00</h1>
+        </div>
+        <div class="flex">
+          <div>
+            <h2>Total</h2>
+            <p>/ person</p>
+          </div>
+          <h1 class="total-pp">$0.00</h1>
+        </div>
+        <div>
+          <button type="reset">Reset</button>
+        </div>
       </div>
     </div>
-
-    <div class="result">
-      <div class="flex">
-        <div>
-          <h2>Tip Amount</h2>
-          <p>/ person</p>
-        </div>
-        <h1 class="tip-pp">$0.00</h1>
-      </div>
-      <div class="flex">
-        <div>
-          <h2>Total</h2>
-          <p>/ person</p>
-        </div>
-        <h1 class="total-pp">$0.00</h1>
-      </div>
-      <div>
-        <button type="reset">Reset</button>
-      </div>
     </div>
-  </div>
-  </div>
 
-  <div class="attribution">
-    Challenge by
-    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
-      href="https://www.sarahclements.me/">Sarah C</a>.
-  </div>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+        href="https://www.sarahclements.me/">Sarah C</a>.
+    </div>
+  </main>
 </body>
 
 </html>
